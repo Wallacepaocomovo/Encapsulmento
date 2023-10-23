@@ -1,0 +1,41 @@
+# • Defina uma classe com pelo menos 1 atributo e com os
+# getters/setters no modo pythônico
+# • Solicite ao usuário digitar os valores para criação de um objeto da
+# classe criada
+# • Crie um objeto da classe criada usando os valores digitados pelo
+# usuário
+# • Exiba na tela os valores atributos do objeto criado
+# • Altere os atributos do objeto
+# • Exiba os valores atributos do objeto criado mais uma vez
+
+class casa:
+    def __init__(self, porta, mesa):
+        self.__porta = porta
+        self.__mesa = mesa
+    
+    @property
+    def porta(self):
+        return self.__porta
+
+    @porta.setter
+    def porta(self, porta):
+        self.__titulo = titulo
+    
+    @property
+    def mesa(self):
+        return self.__mesa
+
+    @mesa.setter
+    def mesa(self, mesa):
+        self.__mesa = mesa
+
+l = casa('rua', 1)
+
+print(l.porta)
+print(l.mesa)
+
+l.mesa = '1'
+l.porta = 'madeira'
+
+print(l.porta)
+print(l.mesa)
